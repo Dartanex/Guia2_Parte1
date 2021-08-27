@@ -1,0 +1,89 @@
+/*Algunas configuraciones generales*/
+/*Poniendo color a la parte superior de la página*/
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+/*Contenido de la pagina*/
+body {
+  background: -webkit-linear-gradient(rgb(238, 195, 5), rgb(226, 222, 162));
+}
+#superior {
+  background: -webkit-linear-gradient(rgb(226, 222, 162), rgb(238, 195, 5));
+}
+/*Pie de la página*/
+footer {
+  text-align: center;
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 2;
+  clear: both;
+  background-color: #464d52;
+  color: white;
+  width: 100%;
+}
+
+/*Rendimiento en pc*/
+@media (min-width: 721px) {
+  /*Parte Superior*/
+  .imgHead {
+    margin: 1% 29.3% 1% 5%;
+    max-height: 75%;
+    border-radius: 25%;
+  }
+  .imgHead img {
+    padding: 0%;
+  }
+  #cabeza {
+    font-size: 5vh;
+    font-weight: bold;
+    padding: 1%;
+    margin: 0%;
+    margin-left: 2%;
+  }
+  /*Parte del menú*/
+  #menu {
+    margin: 0px auto;
+    width: 80%;
+  }
+  .navegador {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    font-size: 2vw;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0vh 0vh 5vh 0vh;
+  }
+
+  nav ul li {
+    float: left;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 0px 0px 0px;
+    border-top: solid 0.1em rgb(53, 121, 247);
+    border-bottom: solid 0.1em rgb(53, 121, 247);
+    background-color: rgb(238, 195, 5);
+  }
+  nav ul li a {
+    text-decoration: none;
+    padding: 0.3em 0.5em;
+    margin: 0em 0em 0em 0.5em;
+    display: block;
+    color: black;
+    transition: color 1s, transform 3s;
+  }
+  nav ul li a:hover {
+    border-style: solid;
+    border: 5em black;
+    transform: scale(2, 2);
+  }
+  nav ul li #inicio {
+    background: url(/img/futbol/laliga_109475.png) no-repeat 0px 3px;
+    padding-left: 40px;
+  }
+}
